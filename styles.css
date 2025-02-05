@@ -1,0 +1,67 @@
+/* Estilo gerais */
+ /* Define a fonte, remove o preenchimento e define a cor de fundo */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Define a cor de fundo, a cor do texto, o espaçamento interno e o alinhamento centralizado do cabeçalho */
+header {
+    background-color: #eeb0cf;
+    color: rgb(206, 64, 123);
+    padding: 20px;
+    text-align: center;
+
+}
+
+ /* Remove a margem do título */
+header h1 {
+    margin: 0;
+}
+ /* Exibe os itens do menu horizontalmente e adiciona espaçamento entre eles */
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+/* Define a cor do texto dos links e remove o sublinhado */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ /* Define o estilo do rodapé fixo na parte inferior da página, com altura e cor de fundo */
+footer {
+    background-color: #eeb0cf;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+}
+
+/* Estilo da galeria */
+/* Organiza as fotos com layout flexível, distribuindo-as igualmente e permitindo quebra de linha */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px; 
+}
+
+/* Define a largura e o espaçamento inferior de cada item da galeria */
+.photo {
+    width: 25%; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Ajusta a largura das imagens, aplica bordas arredondadas e sombra sutil */
+.photo img {
+    width: 80%; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
